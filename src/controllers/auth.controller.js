@@ -1,4 +1,4 @@
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const { loginService, generateToken } = require('../services/auth.service')
 
 const login = async (req, res) => {
