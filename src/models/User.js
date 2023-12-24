@@ -7,7 +7,7 @@ const UserSchema = new mongoose.Schema({
     },
     username: {
         type: String,
-        required: true,
+        required: false,
         unique: true,
     },
     email: {
@@ -23,11 +23,11 @@ const UserSchema = new mongoose.Schema({
     },
     avatar: {
         type: String,
-        required: true,
+        required: false,
     },
     background: {
         type: String,
-        required: true,
+        required: false,
     }
 })
 
