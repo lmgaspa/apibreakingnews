@@ -10,7 +10,18 @@ const cors = require('cors');
 
 
 dotenv.config();
-app.use(cors());
+
+const allowedOrigins = ['http://localhost:3000', 'https://your-production-domain.com'];
+
+app.use(cors({
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+}));
 
 const port = process.env.PORT || 3000;
 
