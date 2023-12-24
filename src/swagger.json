@@ -39,11 +39,10 @@
                 "Users": {
                   "value": {
                     "name": "Cacau Lima",
-                    "username": "cacode",
+  
                     "email": "clima@gmail.com",
-                    "password": "12345",
-                    "avatar": "https://i.imgur.com/Ry1cb5M.png",
-                    "background": "https://images.wallpapersden.com/image/download/triangle-8k-blue-pattern_bGZlbmiUmZqaraWkpJRmbmdlrWZlbWU.jpg"
+                    "password": "12345"
+            
                   }
                 }
               }
@@ -591,21 +590,16 @@
         "properties": {
           "name": {
             "type": "string"
-          },
-          "username": {
-            "type": "string"
+          }
+     
           },
           "email": {
             "type": "string"
           },
           "password": {
             "type": "string"
-          },
-          "avatar": {
-            "type": "string"
-          },
-          "background": {
-            "type": "string"
+          }
+      
           }
         }
       },
@@ -644,5 +638,3 @@
         }
       }
     }
-  }
-}
