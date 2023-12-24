@@ -19,11 +19,11 @@ const create = async (req, res) => {
             user: {
                 id: user._id,
                 name,
-                username,
+               /*  username, */
                 email,
                 password,
-                avatar,
-                background
+             /*    avatar,
+                background */
             },
         })
     } catch (err) {
