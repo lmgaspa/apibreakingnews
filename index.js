@@ -6,8 +6,11 @@ const dotenv = require('dotenv')
 const authRoute = require('./src/routes/auth.route')
 const newsRoute = require('./src/routes/news.route')
 const swaggerRoute = require('./src/routes/swagger.route')
+const cors = require('cors');
+
 
 dotenv.config();
+app.use(cors());
 
 const port = process.env.PORT || 3000;
 
