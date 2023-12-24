@@ -11,7 +11,7 @@ const cors = require('cors');
 
 dotenv.config();
 
-const allowedOrigins = ['http://localhost:3000', 'https://api-breakingnews-jfhc.onrender.com', 'https://api-breakingnews.onrender.com'];
+const allowedOrigins = ['http://localhost:3000', 'https://api-breakingnews-jfhc.onrender.com', 'https://api-breakingnews.onrender.com', 'https://api-breakingnews.onrender.com/user/create.'];
 
 app.use(cors({
   origin: function (origin, callback) {
